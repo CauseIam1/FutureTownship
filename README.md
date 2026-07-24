@@ -4,11 +4,11 @@
 > **A vision for friction-free, neighborhood-driven municipal governance.**
 > *100% Free. Open-Source. Zero Fees. Built strictly as a public good.*
 > 
-License: GPL v3
-[
-](#-built-for the-collective-zero-profit)
-
+License: GPL v3[](#-built-for the-collective-zero-profit)
 Privacy: ZK--Powered
+
+**![Township of the Future](TownshipDAO.png)**
+
 ## 🌟 Imagine a Township That Just Works
 Imagine waking up in a township where local infrastructure moves at the speed of modern life.
 Where fixing a pothole, clearing a sidewalk, or upgrading the local arena doesn't involve 90-day bureaucratic delays, middleman markups, or opaque decision-making. Instead, local work is posted directly to a community app, completed by local neighbors, verified by residents, and paid out **instantly**.
