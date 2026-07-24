@@ -110,7 +110,7 @@ To tie this all into the Dell 7960 without needing massive physical audio mixers
  I could take three of those bean bag guns and put them on robotic arms and have the AI thermally track anyone that comes close to the server. 
  Having three of them simultaneously patiently looking for the perfect Youtube video moment where two of the guns will simultaneously fire, hitting the person dead center in the chest with a warm bean bags traveling at 250 miles an hour.  
  Of course want to pre warm the bean bags for best optics when we're watching this thermally high resolution video in 4K, from 2 different angles.  
-It also leaves one in the chamber, in case they didn't get the message...
+It also leaves one in the chamber, the last one is in the throat and it's lights out...
 Our friend Rosie would of course then be controlled by the police, who would have the "firing authority".
 
  Come on, Coach, when do I get to play?
