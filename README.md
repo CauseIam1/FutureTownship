@@ -50,3 +50,5 @@ We believe small-town communities represent the heart of real-world civic life. 
 Check out concept.md to explore the technical blueprint, or open an Issue to open a discussion.
 
 # **[Concept.md](concept.md)**
+
+# **[Blueprint.md](blueprint.md)**
