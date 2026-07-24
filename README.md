@@ -49,3 +49,4 @@ This software is released under the GNU General Public License as a **free publi
 We believe small-town communities represent the heart of real-world civic life. If you are a developer, designer, or local advocate who believes there is a better way to run our shared public spaces, welcome aboard!
 Check out concept.md to explore the technical blueprint, or open an Issue to open a discussion.
 
+# **[Concept.md](concept.md)**
