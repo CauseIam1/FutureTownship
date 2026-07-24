@@ -66,3 +66,42 @@ The software architecture relies on an Asymmetric Operating Spectrum:
  * **Visual Telemetry:** Dedicates its massive 16GB VRAM payload to rendering the 3D WebGL spatial interface smoothly, now visualizing the entire municipal UI and active Sub-DAO treasuries.
  * **The Fortress Protocol:** Functions as the sole authorized terminal inside the zero-phone locked server room. It acts as the staging ground to write, test, and deploy new scripts before pushing them via SSH, maintaining absolute physical control over the server environment completely isolated from the public network.
 
+
+### 1. The Surveillance Optics: Teledyne FLIR
+**Teledyne FLIR Elara™ FB-Series ID** (or the FC-Series ID).
+ * **Why them:** They are professional-grade thermal security cameras designed for perimeter intrusion detection. They operate strictly via Power over Ethernet (PoE) and broadcast standard RTSP video streams.
+ * **The Integration:** They have on-board thermal analytics that instantly classify human heat signatures in total darkness, rain, or fog without false-flagging animals or moving trees.
+ * **The Data Loop:** You pull their RTSP IP streams directly into a local, open-source AI NVR (like Frigate) running on the Dell 7960. The NVR catches the thermal flags and pushes WebSocket alerts straight into Rosie's dashboard.
+
+### 2. The Rosie Client Build (sitting near the 4K screen)
+ * **The Unit:** ASUS ROG NUC 
+ * **Specs:** Intel Core Ultra 9 Processor 290HX,cTDP 45-75W, NVIDIA GeForce RTX 5090 Laptop GPU 24GB GDDR7, 32GB DDR5-6400 CSO-DIMM x 2, and a 2TB M.2 2280 NVMe PCIe 5.0 SSD.
+ * **Connectivity:** Rosie runs via a hardwired Ethernet connection back to the Dell 7960 switch. The built-in monitor webcam and mic are routed via USB directly into the Mini-PC, allowing her local OpenCV and Kokoro TTS engines to run instantly.
+
+#### 3. Rosie (The Tactical Sentinel)
+ * **Role:** Rosie is the physical operations bridge and AI agent monitoring the network mesh and physical perimeter.
+ * **Presence Engine:** Operates entirely locally. Detects operator presence via monitor camera and responds via Kokoro TTS, utilizing a physical handshake protocol to pre-load system UI states.
+ * **Hardware:** ASUS ROG NUC running Ubuntu.
+#### 4. Hardwired Perimeter & Environmental Security
+ * **Surveillance Grid:** PoE-driven Teledyne FLIR Elara thermal cameras fed locally into Frigate NVR on the Dell 7960. No cloud access.
+ * **Infrastructure Armor:** Generac.
+
+**Distributed PoE Audio Matrix**.
+### 1. The Studio-Grade Split System: Sennheiser TCC2 + Yamaha PoE Speakers
+ * **The Ears:** The **Sennheiser TeamConnect Ceiling 2 (TCC2)** uses 28 omnidirectional capsules and patented dynamic beamforming. It flush-mounts perfectly into a ceiling and outputs directly to the Dante network.
+ * **The Voice:** You pair the Sennheiser with **Yamaha VXC2P Dante/PoE ceiling speakers**.
+ * **The Advantage:** This gives you a more immersive audio response when Rosie speaks, allowing you to space the speakers evenly across larger rooms like an open-concept, while a single Sennheiser unit handles the voice tracking.
+### 2. The Backend Bridge (Dante Virtual Soundcard)
+To tie this all into the Dell 7960 without needing massive physical audio mixers, you simply install the **Dante Virtual Soundcard** software on the server.
+ * It turns the 7960's existing network port into a 64x64 channel digital audio interface.
+ * The open-source wake-word engine monitors these virtual channels. When you say "Rosie," the server knows exactly which room's IP address the audio came from, processes your command, and routes Kokoro's TTS voice exclusively back to that room's Dante speaker IP.
+
+### The Hub-and-Spoke Surveillance Architecture - Multiple locations
+ * **Centralized Compute:** When you trigger "Surveillance Mode" on a node, the command goes to the Dell 7960. The server allocates the necessary resources, manages the network state for that node, and ensures that the local Mini PC is prioritized for high-performance rendering.
+ * **Streamlined Nodes:** Because the Mini PCs aren't doing the "heavy thinking" (the server handles the AI/logic), you can dedicate their local resources—CPU, RAM, and GPU—almost entirely to surveillance and UI rendering.
+ * **Standardization:** Since every node communicates with the same central controller, you can deploy the exact same "surveillance Mode" package to any physical location.
+### The "surveillance Mode" Execution Flow
+ 1. **Request:** The Dev triggers the command at the node.
+ 2. **Orchestration:** The node sends a request to the Dell 7960.
+ 3. **Deployment:** The server shifts the node's container configuration, prioritizing the surveillance environment into open eyes mode.
+ 4. **Handoff:** The ASUS ROG NUC switches to eyes on the site, ensuring safe protocols are in place.
