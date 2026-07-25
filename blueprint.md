@@ -43,7 +43,7 @@ The software architecture relies on an Asymmetric Operating Spectrum:
  * **Zero-Knowledge Proof Generation:** Utilizes the massive core count of the Xeon w9 to rapidly verify incoming ZK-ID hashes from citizens, ensuring zero lag during high-traffic voting events.
  * **Isolated Ledger Environment:** Runs the local Rippled node natively, processing the instant settlement loops and 5-Flag Karen Protocol triggers entirely on-site.
  * **Holodeck Asset Hosting:** Continues to serve the localized WebGL assets and 3D models out to the command terminal, but scaled up to render the real-time architectural state of the entire township.
-### System Profile: (The Civic Sentry & Edge Node)
+### System Profile: (The Civic Sentry & Edge Node) (HARD CODED NO .ENV ACCESS)
 | Specification | Details |
 |---|---|
 | **Core Hardware** | NVIDIA Jetson AGX Orin (64GB Developer Kit) |
