@@ -7,7 +7,7 @@ The Trustless Township Engine is not a static database; it is a living, breathin
 Every localized Sub-DAO (e.g., Parks, Arena, Fire) acts as an independent organ, while the Parent Township DAO serves as the central nervous system handling global treasury and master ZK-IDs.
 ## 2. The Two-Wallet Topography (XRPL Foundation)
 To ensure maximum security while enabling the "Tap & Go" instant payout engine, the capital structure operates on a strict Two-Wallet Topography. This applies to the Parent Township and trickles down to every modular Sub-DAO.
- * **The Cold Wallet (The Vault):**
+ * **The Cold Wallet (The Vault):** (Multiple Physical Tangem Cards with backup strategy)
    * **Role:** The institutional treasury and long-term capital reserve.
    * **Constraint:** Strictly isolated. Requires multi-signature ZK-verified consensus from the community for major CapEx approvals. It never interacts directly with daily micro-tasks.
  * **The Hot Wallet (The Arterial Engine):**
