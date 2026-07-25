@@ -36,7 +36,7 @@ The software architecture relies on an Asymmetric Operating Spectrum:
 | **Core Hardware** | Dell Precision 7960 Tower |
 | **Compute Core** | Intel Xeon w9-3495X (56 Cores, 112 Threads, up to 4.8GHz) |
 | **System Memory** | 256GB ECC DDR5 4800MHz (Scalable up to 4TB for municipal expansion) |
-| **Graphics / AI Math** | Dual NVIDIA RTX 6000 Ada Generation (48GB GDDR6 each) |
+| **Graphics / AI Math** | Dual NVIDIA RTX 6000 Ada Generation (48GB GDDR6 each) | For Fraud Detection Models |
 | **Storage Array** | 4x 2TB NVMe PCIe Gen 4 SSDs in RAID 10 (Drive 1: Dedicated Rippled environment; Drive 2: Master State & Vault) |
 | **Primary Role** | Heavy cryptographic compute, XRPL ledger state management, and localized Sub-DAO treasury operations. |
 ### I. Cryptographic & Processing Core
